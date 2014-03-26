@@ -11,14 +11,14 @@ A percentage based responsive CSS grid scaling from the base 1008px, to:
 
 ### 1. Download
 
-Download the grid.css file and place within your css directory
+Download the grid.min.css (or grid.css if you prefer) file and place within your css directory
 
 
 ### 2. Link the stylesheet
 
 Add the downloaded stylesheet within your HTML `<head>` (matching your file structure):
 
-`<link rel="stylesheet" href="/css/grid.css">`
+`<link rel="stylesheet" href="/css/grid.min.css">`
 
 ### 3. Meta tag
 
