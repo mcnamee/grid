@@ -1,7 +1,7 @@
 /**
   * Grid
   * Matt Mcnamee - www.mcnamee.co
-  * V2 2014
+  * https://github.com/mcnamee/grid
   **/
 
 /*  Resets
@@ -360,11 +360,11 @@
     .hidden_phone { display: none !important; }
     .visible_phone { display: inline-block !important; }
 
-    .no_inner { padding-left: 0; padding-right: 0; }
-    .no_inner_l { padding-left: 0; }
-    .no_inner_r { padding-right: 0; }
-    .no_inner_t { padding-top: 0; }
-    .no_inner_b { padding-bottom: 0; }
+    .no_inner_phone { padding-left: 0; padding-right: 0; }
+    .no_inner_l_phone { padding-left: 0; }
+    .no_inner_r_phone { padding-right: 0; }
+    .no_inner_t_phone { padding-top: 0; }
+    .no_inner_b_phone { padding-bottom: 0; }
 }
 
 /*  SMALL (S) Grid: 480px - 767px
