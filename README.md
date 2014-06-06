@@ -22,22 +22,25 @@ A 24 column percentage based responsive CSS grid scaling from the base 1008px, t
 
 ## Installation
 
-### 1. Download
+### 1. Download & Link up the stylesheet
 
-Download the grid.min.css (or grid.css if you prefer) file and place within your css directory
+- Download the grid.min.css (or grid.css if you prefer) file and place within your css directory
 
-
-### 2. Link the stylesheet
-
-Add the downloaded stylesheet within your HTML `<head>` (matching your file structure):
+- Add the downloaded stylesheet within your HTML `<head>` (matching your file structure):
 
 `<link rel="stylesheet" href="/css/grid.min.css">`
 
-### 3. Meta tag
+### 2. Meta tag
 
 Add this meta tag within your HTML `<head>`:
 
 `<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />`
+
+### 3. Moderizr
+
+Install Modernizr within your HTML `<head>` for backward compatibility (specifically IE7):
+
+`<script src="http://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.6.2.js"></script>`:
 
 ### 4. Start using!
 
