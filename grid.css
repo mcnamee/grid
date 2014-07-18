@@ -55,17 +55,17 @@
     table { border-collapse : collapse; border-spacing : 0; }
     td { vertical-align : top; }
     .chromeframe { margin : 0.2em 0; background : #ccc; color : black; padding : 0.2em 0; }
-	address { display: block; line-height: 18px; margin-bottom: 18px; }
+    address { display: block; line-height: 18px; margin-bottom: 18px; }
     ::-moz-selection { background: #333333; color: #ffffff; text-shadow: none; }
     ::selection { background: #333333; color: #ffffff; text-shadow: none; }
-	p img { margin: 0; }
-	em { font-style: italic; }
-	small { font-size: 80%; }
-	blockquote, blockquote p { font-size: 17px; line-height: 24px; color: #777; font-style: italic; }
-	blockquote { margin: 0 0 20px; padding: 10px 20px; border-left: 1px solid #ddd; }
-	blockquote cite { display: block; font-size: 12px; color: #555; }
-	blockquote cite:before { content: "\2014 \0020"; }
-	blockquote cite a, blockquote cite a:visited, blockquote cite a:visited { color: #555; }
+    p img { margin: 0; }
+    em { font-style: italic; }
+    small { font-size: 80%; }
+    blockquote, blockquote p { font-size: 17px; line-height: 24px; color: #777; font-style: italic; }
+    blockquote { margin: 0 0 20px; padding: 10px 20px; border-left: 1px solid #ddd; }
+    blockquote cite { display: block; font-size: 12px; color: #555; }
+    blockquote cite:before { content: "\2014 \0020"; }
+    blockquote cite a, blockquote cite a:visited, blockquote cite a:visited { color: #555; }
     article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; float: left; }
     audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
     audio:not([controls]) { display: none; }
@@ -76,14 +76,14 @@
 
 /*  Utility Classes
     ---------------- */
-	.float_right { float: right !important; }
-	.float_left { float: left !important; }
+    .float_right { float: right !important; }
+    .float_left { float: left !important; }
 
-	.text_align_center { text-align: center !important; }
+    .text_align_center { text-align: center !important; }
     .text_align_right { text-align: right !important; }
     .text_align_left { text-align: left !important; }
 
-	.scale_with_grid { max-width: 100%; width: auto; height: auto; max-height: 100%; }
+    .scale_with_grid { max-width: 100%; width: auto; height: auto; max-height: 100%; }
 
 /*  Clearing
     ---------------- */
@@ -360,9 +360,6 @@
         margin-left: 0;
     }
 
-    .hidden_phone { display: none !important; }
-    .visible_phone { display: inline-block !important; }
-
     .no_inner_phone { padding-left: 0; padding-right: 0; }
     .no_inner_l_phone { padding-left: 0; }
     .no_inner_r_phone { padding-right: 0; }
@@ -518,6 +515,11 @@
     .no_inner_r_xs { padding-right: 0; }
     .no_inner_t_xs { padding-top: 0; }
     .no_inner_b_xs { padding-bottom: 0; }
+}
+
+@media only screen and (max-width: 767px) {
+    .hidden_phone { display: none !important; }
+    .visible_phone { display: inline-block !important; }
 }
 
 /*  Print
