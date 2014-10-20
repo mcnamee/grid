@@ -1,5 +1,5 @@
 /**
-  * Grid.css v2.1.1
+  * Grid.css v2.1.2
   * https://github.com/mcnamee/grid
   *
   * Copyright 2014 Matt Mcnamee - www.mcnamee.co
@@ -9,7 +9,7 @@
 
 /*  Resets
     ---------------- */
-    * { text-rendering: optimizeLegibility; font-size: 100%; -webkit-text-size-adjust: 100%;
+    * { text-rendering: auto; font-size: 100%; -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%; }
     html, body { height: 100%; }
     html { font-size : 100%; -webkit-text-size-adjust : 100%; -ms-text-size-adjust : 100%; overflow-y: scroll; }
