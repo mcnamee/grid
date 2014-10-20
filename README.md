@@ -13,10 +13,11 @@ A 24 column percentage based responsive CSS grid scaling from the base 1008px, t
 - **Compatible** back to IE8 (wow it doesn't break on Internet Explorer!)
 
 ## Features
-- **.grid_x** - the grid columns
+- **.grid_x** - the grid columns (1 to 24)
+- **.grid_x_y** - append _y (i.e. xs, s, m, l or xl) to a grid_x (eg. `<div class="grid_24 grid_12_m"></div>` is 24 columns everywhere except on m size, where it's 12 columns)
 - **.prefix_x** - add white space before an element the width of column x
-- **.hidden_x** - hide element on x (predefined xs, s, m, l & xl) size screen
-- **.visible_x** - only show element on x size screen
+- **.hidden_y** - hide element on y (i.e. xs, s, m, l or xl) size screen
+- **.visible_y** - only show element on y (i.e. xs, s, m, l or xl) size screen
 - **Utility classes** - makes life easier with predefined classes such as .clear, .text_align_left (or center or right), .scale_with_grid (add to images to automatically scale as the grid scales)
 - **HTML resets** - all included!
 
