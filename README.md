@@ -40,11 +40,11 @@ A 24 column percentage based responsive CSS grid scaling from the base 1008px, t
 
 ### 1. Download & Link up the stylesheet
 
-- Download the grid.min.css (or grid.css if you prefer) file and place within your css directory
+- Download the grid.css file and place within your scss directory
 
-- Add the downloaded stylesheet within your HTML `<head>` (matching your file structure):
+- Add grid.css to your SASS/SCSS structure as a SASS Partial (or minify it and include it in your HTML `<head>` as below) 
 
-`<link rel="stylesheet" href="/css/grid.min.css">`
+`<link rel="stylesheet" href="/css/grid.min.css">` (Matching your file structure of course!)
 
 ### 2. Meta tag
 
