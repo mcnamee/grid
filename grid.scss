@@ -1,5 +1,5 @@
 /**
-  * Grid.css v3.0
+  * Grid.css v3.1
   * https://github.com/mcnamee/grid
   *
   * Copyright 2014 Matt Mcnamee - www.mcnamee.co
@@ -36,7 +36,7 @@ body {
 	font-size:                1em;
 	line-height:              1.4;
 	-webkit-font-smoothing:   antialiased;
-	-webkit-text-size-adjust: 100%
+	-webkit-text-size-adjust: 100%;
 }
 
 a {
@@ -135,7 +135,8 @@ nav ol, nav ul {
 img {
 	border:                 0;
 	-ms-interpolation-mode: bicubic;
-	vertical-align:         middle
+	vertical-align:         middle;
+	max-width: 100%;
 }
 
 svg:not(:root) {
@@ -260,9 +261,8 @@ small {
 }
 
 blockquote, blockquote p {
-	font-size:   17px;
-	line-height: 24px;
-	color:       #777;
+	font-size:   30px;
+	line-height: 1.5;
 	font-style:  italic
 }
 
@@ -288,11 +288,27 @@ blockquote cite a, blockquote cite a:visited {
 
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
 	display: block;
-	float:   left
 }
 
 audio, canvas, video {
 	display: inline-block
+}
+
+.padded {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	@media screen and (max-width: $grid_s) {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+}
+.margined {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	@media screen and (max-width: $grid_s) {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
 }
 
 [hidden], audio:not([controls]) {
@@ -390,6 +406,42 @@ audio, canvas, video {
 	margin-right: -10px;
 }
 
+.row.medium_gutters.outer {
+	margin-left:  -15px;
+	margin-right: -15px;
+	@media screen and (max-width: $grid_s) {
+		margin-left: -10px;
+		margin-right: -10px;
+	}
+}
+
+.row.medium_gutters .inner {
+	padding-left:  15px;
+	padding-right: 15px;
+	@media screen and (max-width: $grid_s) {
+		padding-left:  10px;
+		padding-right: 10px;
+	}
+}
+
+.row.large_gutters.outer {
+	margin-left:  -20px;
+	margin-right: -20px;
+	@media screen and (max-width: $grid_s) {
+		margin-left: -10px;
+		margin-right: -10px;
+	}
+}
+
+.row.large_gutters .inner {
+	padding-left:  20px;
+	padding-right: 20px;
+	@media screen and (max-width: $grid_s) {
+		padding-left:  10px;
+		padding-right: 10px;
+	}
+}
+
 
 .grid_1, .grid_10, .grid_11, .grid_12, .grid_13, .grid_14, .grid_15, .grid_16, .grid_17, .grid_18, .grid_19, .grid_2, .grid_20, .grid_21, .grid_22, .grid_23, .grid_24, .grid_3, .grid_4, .grid_5, .grid_6, .grid_7, .grid_8, .grid_9, .grid_5th {
 	display:            inline-block;
@@ -433,7 +485,7 @@ body {
 }
 
 .container_24 {
-	width: 1008px
+	width: 980px;
 }
 
 .grid_5th {
@@ -842,13 +894,19 @@ body {
 
 @media only screen and (min-width: 1024px) and (max-width: 1199px) {
 	.hidden_m, .hidden_phone, .hidden_s, .hidden_xl, .hidden_xs {
-		display: inline-block !important
+		display: inline-block !important;
+		&.visible_block {
+			display: block !important;
+		}
 	}
 	.hidden_l, .visible_m, .visible_phone, .visible_s, .visible_xl, .visible_xs {
 		display: none !important
 	}
 	.visible_l {
-		display: inline-block !important
+		display: inline-block !important;
+		&.visible_block {
+			display: block !important;
+		}
 	}
 }
 
@@ -857,7 +915,7 @@ body {
 		min-width: 1170px
 	}
 	.container_24 {
-		width: 1170px
+		width: 1160px
 	}
 	.grid_5th_xl {
 		width: 20%;
@@ -1209,13 +1267,19 @@ body {
 		right: 100%
 	}
 	.hidden_l, .hidden_m, .hidden_phone, .hidden_s, .hidden_xs {
-		display: inline-block !important
+		display: inline-block !important;
+		&.visible_block {
+			display: block !important;
+		}
 	}
 	.hidden_xl, .visible_l, .visible_m, .visible_phone, .visible_s, .visible_xs {
 		display: none !important
 	}
 	.visible_xl {
-		display: inline-block !important
+		display: inline-block !important;
+		&.visible_block {
+			display: block !important;
+		}
 	}
 }
 
@@ -1224,7 +1288,7 @@ body {
 		min-width: 750px
 	}
 	.container_24 {
-		width: 750px
+		width: 720px
 	}
 	.grid_5th_m {
 		width: 20%;
@@ -1576,13 +1640,19 @@ body {
 		right: 100%
 	}
 	.hidden_l, .hidden_phone, .hidden_s, .hidden_xl, .hidden_xs {
-		display: inline-block !important
+		display: inline-block !important;
+		&.visible_block {
+			display: block !important;
+		}
 	}
 	.hidden_m, .visible_l, .visible_phone, .visible_s, .visible_xl, .visible_xs {
 		display: none !important
 	}
 	.visible_m {
-		display: inline-block !important
+		display: inline-block !important;
+		&.visible_block {
+			display: block !important;
+		}
 	}
 }
 
@@ -1977,13 +2047,19 @@ body {
 		right: 100%
 	}
 	.hidden_l, .hidden_m, .hidden_xl, .hidden_xs {
-		display: inline-block !important
+		display: inline-block !important;
+		&.visible_block {
+			display: block !important;
+		}
 	}
 	.hidden_s, .visible_l, .visible_m, .visible_xl, .visible_xs {
 		display: none !important
 	}
 	.visible_s {
-		display: inline-block !important
+		display: inline-block !important;
+		&.visible_block {
+			display: block !important;
+		}
 	}
 	.no_inner_s {
 		padding-left:  0;
@@ -2354,13 +2430,19 @@ body {
 		right: 100%
 	}
 	.hidden_l, .hidden_m, .hidden_s, .hidden_xl {
-		display: inline-block !important
+		display: inline-block !important;
+		&.visible_block {
+			display: block !important;
+		}
 	}
 	.hidden_xs, .visible_l, .visible_m, .visible_s, .visible_xl {
 		display: none !important
 	}
 	.visible_xs {
-		display: inline-block !important
+		display: inline-block !important;
+		&.visible_block {
+			display: block !important;
+		}
 	}
 	.no_inner_xs {
 		padding-left:  0;
@@ -2385,7 +2467,10 @@ body {
 		display: none !important
 	}
 	.visible_phone {
-		display: inline-block !important
+		display: inline-block !important;
+		&.visible_block {
+			display: block !important;
+		}
 	}
 }
 
