@@ -7,6 +7,43 @@
   * Free to use under the GPLv2 license.
   * http://www.gnu.org/licenses/gpl-2.0.html
   **/
+
+////////////////////////////////////////
+///// Media Queries Breakpoints ////////
+////////////////////////////////////////
+
+/* Do not Edit! */
+
+// Extra small screen
+$grid_xs:                  479px;
+$grid_xs_min:              300px;
+$grid_xs_max:              $grid_xs;
+
+// Small screen / tablet
+$grid_s:                  767px;
+$grid_s_min:              ($grid_xs + 1);
+$grid_s_max:              $grid_s;
+
+// Medium screen / tablet
+$grid_m:                  1023px;
+$grid_m_min:              ($grid_s + 1);
+$grid_m_max:              $grid_m;
+
+// Large screen / desktop
+$grid_l:                  1199px;
+$grid_l_min:              ($grid_m + 1);
+$grid_l_max:              $grid_l;
+
+// Extra Large screen / wide desktop
+$grid_xl:                 ($grid_l + 1);
+$grid_xl_min:             ($grid_l + 1);
+
+// Phone Size
+$grid_phone:              $grid_s;
+$grid_phone_min:          $grid_xs_min;
+$grid_phone_max:          $grid_phone;
+
+
 * {
 	text-rendering:           auto;
 	font-size:                100%;
