@@ -21,15 +21,32 @@ A 24 column percentage based responsive CSS grid scaling from the base 1008px, t
 - **Utility classes** - makes life easier with predefined classes such as .clear, .text_align_left (or center or right), .scale_with_grid (add to images to automatically scale as the grid scales)
 - **HTML resets** - all included!
 
+### Source Ordering
+- Switch the position/order of divs in a row based on the media query. i.e. image right text left on desktop, image top text bottom on mobile.
+- **.push_x** - push div x columns to the right
+- **.push_x_y** - append _y (i.e. xs, s, m, l or xl) to a push_x (eg. `<div class="grid_12 push_12_m"></div>` is 12 columns wide and is pushed 12 columns to the right on size grid_m)
+- **.pull_x** - pull div x columns to the left
+- **.pull_x_y** - append _y (i.e. xs, s, m, l or xl) to a pull_x (eg. `<div class="grid_12 pull_12_m"></div>` is 12 columns wide and is pulled 12 columns to the left on size grid_m)
+
+### .row class
+- Inside your container_24 div add in a .row div to wrap all of your 'grid_x divs. This will auto clear all the floats within the row
+- Add the class .outer to your .row div and it will add -10px margin to each side of the row. This is used to offset the outermost .inner margin added to .grid_12 inner divs. i.e. `<div class="row outer"><div class="grid_12 inner"></div><div class="grid_12 inner"></div></div>`
+
+### Gutter Widths
+- Add `.medium_gutters` or `.large_gutters` to your enclosing `.row` element to change the gutter widths to 15px or 20px respectively.
+
+### .5ths grid class
+- **Need to create a column layout that is 5 columns wide?** Then use .grid_5th or .grid_5th_y (where y is a grid size i.e. xs, s, m, l or xl) and it will line up nicely.
+
 ## Installation
 
 ### 1. Download & Link up the stylesheet
 
-- Download the grid.min.css (or grid.css if you prefer) file and place within your css directory
+- Download the grid.css file and place within your scss directory
 
-- Add the downloaded stylesheet within your HTML `<head>` (matching your file structure):
+- Add grid.css to your SASS/SCSS structure as a SASS Partial (or minify it and include it in your HTML `<head>` as below) 
 
-`<link rel="stylesheet" href="/css/grid.min.css">`
+`<link rel="stylesheet" href="/css/grid.min.css">` (Matching your file structure of course!)
 
 ### 2. Meta tag
 
