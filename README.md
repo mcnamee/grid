@@ -10,6 +10,9 @@
 - Inside your container_24 div add in a .row div to wrap all of your 'grid_x divs. This will auto clear all the floats within the row
 - Add the class .outer to your .row div and it will add -10px margin to each side of the row. This is used to offset the outermost .inner margin added to .grid_12 inner divs. i.e. `<div class="row outer"><div class="grid_12 inner"></div><div class="grid_12 inner"></div></div>`
 
+### New gutter widths
+- Add `.medium_gutters` or `.large_gutters` to your enclosing `.row` element to change the gutter widths to 15px or 20px respectively.
+
 ### New .5ths grid class
 - **Need to create a column layout that is 5 columns wide?** Then use .grid_5th or .grid_5th_y (where y is a grid size i.e. xs, s, m, l or xl) and it will line up nicely.
 
